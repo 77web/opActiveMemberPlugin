@@ -1,0 +1,33 @@
+Member:
+  member_1:
+    id: ~
+    name: "Member1"
+    is_active: 1
+  member_2:
+    name: "Member2"
+    is_active: 1
+  member_3:
+    name: "Member3"
+    is_active: 1
+    
+MemberConfig:
+  member_address_1:
+    name: "pc_address"
+    value: "sns@example.com"
+    Member: member_1
+  member_mobile_address_1:
+    name: "mobile_address"
+    value: "sns@example.com"
+    Member: member_1
+  member_password_1:
+    name: "password"
+    value: "<?php echo md5('password') ?>"
+    Member: member_1
+  member2_lastLogin:
+    name: "lastLogin"
+    value_datetime: "<?php echo date('Y-m-d H:i:s', time()); ?>"
+    Member: member_2
+  member3_lastLogin:
+    name: "lastLogin"
+    value_datetime: "<?php echo date('Y-m-d H:i:s', time() - 60*60); ?>"
+    Member: member_3
