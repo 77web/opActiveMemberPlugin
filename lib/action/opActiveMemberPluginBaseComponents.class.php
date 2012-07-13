@@ -23,6 +23,30 @@ class opActiveMemberPluginBaseComponents extends sfComponents
   }
 
  /**
+  * ログイン中のフレンドを表示する
+  * 
+  * @access public
+  * @param  $request
+  */
+  public function executeFriendList($request)
+  {
+    if (!$this->getUser()->isSNSMember())
+    {
+      return sfView::NONE;
+    }
+
+    $friendIdList = Doctrine::getTable('MemberRelationship')->getFriendMemberIds($this->getUser()->getMemberId());
+    $this->memberList = array();
+    if (0 != count($friendIdList))
+    {
+      $query = Doctrine::getTable('Member')->createQuery('m')->andWhereIn('id', $friendIdList);
+      $this->addActiveCondition($query);
+
+      $this->memberList = $query->execute();
+    }
+  }
+
+ /**
   * メンバーのクエリに現在ログイン中の条件を付加する
   * 
   * @access protected

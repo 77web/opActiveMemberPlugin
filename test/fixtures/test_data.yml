@@ -9,6 +9,9 @@ Member:
   member_3:
     name: "Member3"
     is_active: 1
+  member_4:
+    name: "Member4"
+    is_active: 1
     
 MemberConfig:
   member_address_1:
@@ -31,3 +34,17 @@ MemberConfig:
     name: "lastLogin"
     value_datetime: "<?php echo date('Y-m-d H:i:s', time() - 60*60); ?>"
     Member: member_3
+  member4_lastLogin:
+    name: "lastLogin"
+    value_datetime: "<?php echo date('Y-m-d H:i:s', time()); ?>"
+    Member: member_4
+
+MemberRelationship:
+  member4_and_member1:
+    Member: member_4
+    MemberRelatedByMemberIdFrom: member_1
+    is_friend: true
+  member1_and_member4:
+    Member: member_1
+    MemberRelatedByMemberIdFrom: member_4
+    is_friend: true
