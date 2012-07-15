@@ -1,0 +1,13 @@
+Gadget:
+  pc_active_members:
+    type: "loginContents"
+    name: "activeMemberList"
+    sort_order: 100
+  pc_active_friends:
+    type: "sideBannerContents"
+    name: "activeFriendList"
+    sort_order: 10
+  mobile_active_friends:
+    type: "mobileContents"
+    name: "activeFriendList"
+    sort_order: 10
