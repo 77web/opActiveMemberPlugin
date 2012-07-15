@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="">
+        <source>Active members</source>
+        <target>ﾛｸﾞｲﾝ中のﾒﾝﾊﾞｰ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Active %my_friend%</source>
+        <target>ﾛｸﾞｲﾝ中の%my_friend%</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
