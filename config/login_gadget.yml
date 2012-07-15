@@ -1,0 +1,8 @@
+ActiveMemberList:
+  caption:
+    ja_JP: "ログイン中メンバー"
+    en_US: "List of active members"
+  description:
+    ja_JP: "ログイン中のメンバー一覧を表示"
+    en_US: "Show active members"
+  component: [activeMember, list]
