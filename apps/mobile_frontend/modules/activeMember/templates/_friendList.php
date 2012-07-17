@@ -1,7 +1,20 @@
 <?php
-$list = array();
-foreach ($memberList as $member)
+$options = array(
+  'title' => __('Active %my_friend%'),
+);
+
+if (count($memberList) > 0)
 {
-  $list[] = op_link_to_member($member);
+  $list = array();
+  foreach ($memberList as $member)
+  {
+    $list[] = op_link_to_member($member);
+  }
+  $options['border'] = false;
+
+  op_include_list('activeFriendList', $list, $options);
 }
-op_include_list('activeFriendList', $list, array('title' => __('Active %my_friend%'), 'border' => false));
+else
+{
+  op_include_box('activeFriendList', 'No active %my_friend%.', $options);
+}
