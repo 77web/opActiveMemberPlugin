@@ -10,6 +10,14 @@
         <source>Active %my_friend%</source>
         <target>ログイン中の%my_friend%</target>
       </trans-unit>
+      <trans-unit id="">
+        <source>No active members.</source>
+        <target>ログイン中のメンバーはいません。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>No active %my_friend%.</source>
+        <target>ログイン中の%my_friend%はいません。</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
