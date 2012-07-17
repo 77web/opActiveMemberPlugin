@@ -11,3 +11,9 @@ Gadget:
     type: "mobileContents"
     name: "activeFriendList"
     sort_order: 10
+
+GadgetConfig:
+  pc_active_members_public_flag:
+    Gadget: pc_active_members
+    name: viewable_privilege
+    value: 4

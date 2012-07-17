@@ -1,4 +1,4 @@
-ActiveMemberList:
+activeMemberList:
   caption:
     ja_JP: "ログイン中メンバー"
     en_US: "List of active members"
@@ -7,7 +7,7 @@ ActiveMemberList:
     en_US: "Show active members"
   component: [activeMember, list]
 
-ActiveFriendList:
+activeFriendList:
   caption:
     ja_JP: "ログイン中の友達"
     en_US: "List of active friends"
