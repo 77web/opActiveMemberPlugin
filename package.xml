@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>opActiveMemberPlugin</name>
+ <channel>plugins.openpne.jp</channel>
+ <summary>ログイン中のメンバーを表示</summary>
+ <description>ログイン中のメンバー・ログイン中のフレンドを表示します。</description>
+ <lead>
+  <name>77web</name>
+  <user>77web</user>
+  <email />
+  <active>yes</active>
+ </lead>
+ <date>2012-07-17</date>
+ <time>14:58:17</time>
+ <version>
+  <release>0.9.0</release>
+  <api>0.9.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license>MIT</license>
+ <notes>
+first release
+ </notes>
+ <contents>
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="ccb38b77e744e6a86951225e621d3c26" name="apps/mobile_frontend/i18n/messages.ja.xml" role="data" />
+   <file baseinstalldir="/" md5sum="4e6bd4cbffaba887f03ce1dcb4b5b024" name="apps/mobile_frontend/modules/activeMember/actions/components.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="eb619cd5184661a2d071a6c5aacb4c0b" name="apps/mobile_frontend/modules/activeMember/templates/_friendList.php" role="data" />
+   <file baseinstalldir="/" md5sum="35d9f46ae68c36bb8a44b3470bd04c39" name="apps/mobile_frontend/modules/activeMember/templates/_list.php" role="data" />
+   <file baseinstalldir="/" md5sum="a3c118ce12b396699392e9dc8d5bbe31" name="apps/pc_frontend/i18n/messages.ja.xml" role="data" />
+   <file baseinstalldir="/" md5sum="4e6bd4cbffaba887f03ce1dcb4b5b024" name="apps/pc_frontend/modules/activeMember/actions/components.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="1622b589d3ba0deec03dacacfa934b1c" name="apps/pc_frontend/modules/activeMember/templates/_friendList.php" role="data" />
+   <file baseinstalldir="/" md5sum="b5f610c982fe5e60ff7e9fd0957f1681" name="apps/pc_frontend/modules/activeMember/templates/_list.php" role="data" />
+   <file baseinstalldir="/" md5sum="a1bfcf3d75d9e21f7deecf4b1f3458a3" name="config/app.yml" role="data" />
+   <file baseinstalldir="/" md5sum="a745a1ecd69a241ff0593bab84cdecaf" name="config/gadget.yml" role="data" />
+   <file baseinstalldir="/" md5sum="660ea5cb6c8614c4d4a9219ddf4f0710" name="config/login_gadget.yml" role="data" />
+   <file baseinstalldir="/" md5sum="a745a1ecd69a241ff0593bab84cdecaf" name="config/mobile_gadget.yml" role="data" />
+   <file baseinstalldir="/" md5sum="a745a1ecd69a241ff0593bab84cdecaf" name="config/side_banner_gadget.yml" role="data" />
+   <file baseinstalldir="/" md5sum="f2692624506cd53982b02e23c860aa63" name="data/fixtures/gadget.yml" role="data" />
+   <file baseinstalldir="/" md5sum="d4001d40a3c1d2039fe5cbb65470a132" name="lib/action/opActiveMemberPluginBaseComponents.class.php" role="data" />
+   <file baseinstalldir="/" md5sum="6059fe5458d6348af2659d38af527912" name="test/bootstrap/database.php" role="data" />
+   <file baseinstalldir="/" md5sum="155ce720c060aa5fc9e2bbbc779b7a13" name="test/bootstrap/functional.php" role="data" />
+   <file baseinstalldir="/" md5sum="53df737807ad0e3ba7dd2abb8cab3e3c" name="test/bootstrap/unit.php" role="data" />
+   <file baseinstalldir="/" md5sum="cbe148c95767bfb40c2315c81994f49f" name="test/fixtures/test_data.yml" role="data" />
+   <file baseinstalldir="/" md5sum="d3da637baa9994eb309ab14d8c29e0a4" name="test/functional/mobile_frontend/activeMemberComponentsTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="76bccdfd3934814f2f74cbb5b24ab595" name="test/functional/pc_frontend/activeMemberComponentsTest.php" role="data" />
+   <file baseinstalldir="/" md5sum="1175e90dfd41d6ebae99e95d85721b6c" name="dependencies.yml" role="data" />
+   <file baseinstalldir="/" md5sum="f4db3599fb3e9532f4f9044a0156650d" name="README" role="data" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.3</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+   <package>
+    <name>openpne</name>
+    <channel>plugins.openpne.jp</channel>
+    <min>3.6.0</min>
+   </package>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>0.9.0</release>
+    <api>0.9.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2012-07-17</date>
+   <license>MIT</license>
+   <notes>
+first release
+   </notes>
+  </release>
+ </changelog>
+</package>
